@@ -1,0 +1,157 @@
+.logo {
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  background-color: hsl(30, 24%, 93%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 15px 15px;
+  width: 280px;
+  border-right: 1px solid hsl(38, 18%, 62%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-links {
+  border-top: 1px solid hsl(38, 18%, 62%);
+  padding-top: 15px;
+  
+}
+
+.sidebar-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8px;
+  border-radius: 8px;
+  margin-bottom: 1px;
+  color: hsl(32, 20%, 29%);
+  transition: all 0.1s;
+  font-family: "DM-Sans";
+  cursor: pointer;
+}
+
+.sidebar-link:hover{
+  background-color: hsl(36, 22%, 86%);
+}
+
+.sidebar-link:active {
+  opacity: 0.8;
+}
+
+.sidebar-enable-link {
+  background-color: hsl(35, 60%, 96%);
+  color: black;
+}
+
+.icon-title-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.sidebar-link-title {
+  margin: 10px 0;
+}
+
+.nav-icon {
+  height: 18px;
+  margin-right: 10px;
+}
+
+.notif-count {
+  background-color: hsl(15, 74%, 41%);
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+}
+
+.weather-card {
+  background-color: hsl(45, 100%, 74%);
+  padding: 16px 15px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.weather-card .sun-image {
+  position: absolute;
+  right: -15px;
+  top: -25px;
+}
+
+.weather-card .degrees{
+  margin: 0;
+  font-family: Fraunces-Regular;
+}
+
+.weather-card .info, .weather-card .location {
+  font-family: DM-Sans;
+  margin: 0;
+}
+
+.weather-card .location {
+  letter-spacing: 3px;
+  font-size: 13px;
+}
+
+.weather-card .degrees {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.page-info {
+  color: gray;
+  border-top: 1px dashed hsl(38, 18%, 62%);
+  font-family: DMMono-Regular;
+  font-size: 12px;
+}
+
+@media (max-width: 1300px) and (min-width: 980.1px) {
+  .sidebar {
+    width: 180px;
+  }
+
+  .sidebar-link-title {
+    font-size: 11px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+
+  .notif-count {
+    width: 14px;
+    height: 14px;
+    font-size: 11px;
+  }
+  .icon-title-container {
+    margin: 5px;
+  }
+
+  .weather-card .location {
+    font-size: 10px;
+  }
+
+  .page-info {
+    font-size: 9px;
+  }
+  
+}
+
+@media (max-width: 980px) {
+  .sidebar {
+    display: none;
+  }
+}

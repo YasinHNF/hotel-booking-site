@@ -1,0 +1,79 @@
+.welcome-card {
+    width: 450px;
+    height: 410px;
+    background-image: linear-gradient(to left bottom, hsl(22, 72%, 56%), hsl(15, 74%, 41%));
+    padding: 20px;
+    border-radius: 15px;
+    color: hsl(36, 22%, 86%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transform: rotate(3deg);
+    transition: all 0.2s;
+
+    box-shadow: 1px 1px 20px hsl(22, 72%, 56%);
+    z-index: 1;
+}
+
+.welcome-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px dashed hsl(36, 22%, 86%);
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    font-family: DM-Sans;
+    font-size: 11px;
+    letter-spacing: 2px;
+
+}
+
+.sun-icon-welcome-card {
+    height: 50px;
+    margin-top: 5px;
+}
+
+
+
+.welcome-message-title {
+    font-family:  Fraunces-Italic;
+    font-size: 15px;
+    margin: 0;
+}
+
+.host-name {
+    font-family: Fraunces-Italic;
+    font-size: 30px;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 17px;
+}
+
+.welcome-message {
+    font-family: DM-Sans;
+    font-size: 12px;
+}
+
+.room-label {
+    font-family: DM-Sans;
+    font-size: 12px;
+    margin-bottom: 5px;
+
+}
+
+.room-name {
+    font-family: Fraunces-Regular;
+    font-size: 20px;
+    margin: 0;
+}
+
+@media (max-width: 980px) {
+    .welcome-card {
+        width: 320px;
+    }
+}
+

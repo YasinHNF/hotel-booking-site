@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "DMMono-Regular";
+  src: url('../assets/fonts/dm-mono/DMMono-Regular.ttf');
+}
+
+@font-face {
+  font-family: "DMMono-Medium";
+  src: url("../assets/fonts/dm-mono/DMMono-Medium.ttf");
+}
+
+@font-face {
+  font-family: "DM-Sans";
+  src: url("../assets/fonts/dm-sans/DMSans-VariableFont_opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Fraunces-Regular";
+  src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Fraunces-Italic";
+  src: url("../assets/fonts/fraunces/Fraunces-Italic-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  margin-left: 310px;  /*30px more than the width of the sidebar */
+  margin-right: 30px;
+  background-color: hsl(30, 24%, 93%);
+  cursor: default;
+
+}
+
+main {
+  margin-bottom: 40px;
+}
+
+.cards-container {
+  margin: 50px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-image: url("assets/images/icon-sun.svg");
+}
+
+.cards-container-background {
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  transition: 0.2s all;
+}
+
+.cards-container:hover .cards-container-background {
+  bottom: 30%;
+}
+
+.cards-container:hover .receipt-card{
+  transform: rotate(8deg);
+  margin-right: 180px;
+}
+
+.cards-container:hover .welcome-card {
+  transform: rotate(-8deg);
+}
+
+.sparkle {
+  height: 12px;
+}
+
+.sparkle-container p {
+  font-family: DM-Sans;
+  color: gray;
+  font-size: 12px;
+  margin: 10px 10px;
+}
+
+.sparkle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@media (max-width: 1300px) and (min-width: 980.1px) {
+  body {
+    margin-left: 210px;
+  }
+}
+
+
+@media (max-width: 980px) {
+  body {
+    margin-left: 30px;
+
+  }
+
+  .cards-container {
+    flex-direction: column;
+    pointer-events: none;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .sparkle-container {
+    display: none;
+  }
+}

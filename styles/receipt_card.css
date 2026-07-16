@@ -1,0 +1,169 @@
+.receipt-card {
+    width: 450px;
+    background-color: hsl(40, 60%, 98%);
+    border-radius: 15px;
+    padding: 20px;
+    height: 410px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: DM-Sans;
+    transform: rotate(-3deg);
+    z-index: 0;
+    transition: all 0.2s;
+
+}
+
+.receipt-header {
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+
+.receipt-text {
+    margin: 0;
+}
+
+.receipt-id {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    font-family: DMMono-Regular;
+    position: relative;
+}
+
+.receipt-date {
+    margin: 0;
+}
+
+.receipt-code {
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.your-stay {
+    margin-top: 5px;
+    margin-bottom: 0;
+    font-family: Fraunces-Regular;
+    font-size: 22px;
+    color: black;
+}
+
+.checks-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.checks-container {
+    padding: 19px 0;
+    margin: 18px 0;
+    border-bottom: 1px dashed hsl(36, 22%, 86%);
+    border-top: 1px dashed hsl(36, 22%, 86%);
+
+}
+
+.check-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.check-text,
+.check-date,
+.check-day {
+    margin: 0;
+}
+
+.check-text {
+    color: gray;
+    font-size: 10px;
+    font-family: DMMono-Regular;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.check-date {
+    font-family: Fraunces-Regular;
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.check-day {
+    font-size: 12px;
+}
+
+.prices-container {
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+}
+
+.prices-container p {
+    margin: 0;
+    margin-bottom: 12px;
+    
+}
+
+.price-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.price-number {
+    font-family: DMMono-Regular;
+}
+
+.receipt-card-total-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3px;
+
+}
+
+.total-paid-text {
+    color: gray;
+    letter-spacing: 2px;
+    font-size: 13px;
+
+}
+
+.total-price {
+    font-family: Fraunces-Regular;
+    font-size: 22px;
+    margin: 0;
+}
+
+.receipt-card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.payment-details {
+    color: gray;
+    letter-spacing: 2px;
+    font-size: 11px;
+}
+
+.receipt-barcode {
+    height: 27px;
+    margin-top: 8px;
+}
+
+@media (max-width: 980px) {
+    .prices-container {
+        font-size: 11px;
+    }
+
+    .receipt-card {
+        width: 320px;
+    }
+
+}
