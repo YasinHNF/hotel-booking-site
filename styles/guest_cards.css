@@ -168,6 +168,9 @@
     .info-for-guest {
         flex-direction: column;
         align-items: center;
+    },
+    .info-card {
+        width: 300px;
     }
 }
 
